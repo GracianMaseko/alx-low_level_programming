@@ -17,3 +17,18 @@ puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
 (Prints exactly "Programming is like building a multilingual puzzle, followed by a new line)
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+printf("with proper grammar, but the outcome is a piece of art,\n");
+return (0);
+}
+A C program that prints **exactly with proper grammar, but the outcome is a piece of art**, followed by a new line.
+Use the function printf.
+Your program should return 0
