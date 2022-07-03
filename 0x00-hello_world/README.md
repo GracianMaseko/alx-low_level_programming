@@ -1,24 +1,30 @@
 gcc -E $CFILE -o c: a script that runs a C file through the preprocessor and save the result into another file. The C file name will be saved in the variable $CFILE. The output should be saved in the file c
 
-gcc $CFILE -c: compiles a C file but does not link.The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension .o instead of .c. /n
-gcc $CFILE -o cisfun: compiles a C file and creates an executable named cisfun. The C file name will be saved in the variable $CFILE
-gcc -S $CFILE: generates the assembly code of a C code and save it in an output file. The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension .s instead of .c.
-#include <stdio.h>
 
+gcc $CFILE -c: compiles a C file but does not link.The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension .o instead of .c. /n
+
+
+gcc $CFILE -o cisfun: compiles a C file and creates an executable named cisfun. The C file name will be saved in the variable $CFILE
+
+
+gcc -S $CFILE: generates the assembly code of a C code and save it in an output file. The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension .s instead of .c.
+
+
+#include <stdio.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
 (Prints exactly "Programming is like building a multilingual puzzle, followed by a new line)
-#include <stdio.h>
 
+
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -32,12 +38,14 @@ return (0);
 A C program that prints **exactly with proper grammar, but the outcome is a piece of art**, followed by a new line.
 Use the function printf.
 Your program should return 0
+
+
+#include <stdio.h>
 /**
 >  * main - Entry point
 >  *
 >  * Return: Always 0 (Success)
->  */
->
+>  */>
 > int main(void)
 > {
 > char acharacter;
@@ -54,5 +62,26 @@ Your program should return 0
 >
 > return (0);
 prints the size of various types on the computer it is compiled and run on. You should produce the exact same output as in the example. Your program should return 0. 
+
+
 gcc -S -masm=intel $CFILE : 
 Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file. The C file name will be saved in the variable $CFILE. The output file should be named the same as the C file, but with the extension .s instead of .c.
+#include <stdio.h>
+> #include <unistd.h>
+>
+> /**
+>  * main - Entry point
+>  *
+>  * Description: and that piece of art is useful - Dora Korpar, 2015-10-19
+>  *
+>  * Return: Always 0 (Success)
+>  */
+>  int main(void)
+>  {
+>  write (and that piece of art is useful - Dora Korpar, 2015-10-19 59);
+>  return (1);
+>  }
+prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+
+You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+Your program should return 1
