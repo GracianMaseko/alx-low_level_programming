@@ -1,6 +1,2 @@
 #!/bin/bash
-<<<<<<< HEAD
-export CFILE=0-main.c ; ./0-preprocessor
-=======
 export $CFILE=0-main.c ; ./0-preprocessor
->>>>>>> 9cf67f1d4fe3f1a249419b2f091c5df5931c52f3
