@@ -1,3 +1,4 @@
+carrie@ubuntu:/debugging$ cat 1-main.c
 #include <stdio.h>
 
 /**
